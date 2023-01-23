@@ -1,0 +1,5 @@
+dist
+
+# Mocks data
+**/data.json
+**/mocks-uuid.json

@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Encode Sans Semi Expanded Regular'),
+    local('EncodeSansSemiExpanded-Regular'),
+    /* from https://fonts.gstatic.com/s/encodesanssemiexpanded/v2/ke83OhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TO401Lg.woff2 */
+      url('/w/static/fonts/Encode_Sans_Semi_Expanded.woff2') format('woff2'),
+    /* from https://fonts.gstatic.com/s/encodesanssemiexpanded/v2/ke83OhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TO401KA.woff */
+      url('/w/static/fonts/Encode_Sans_Semi_Expanded.woff') format('woff'),
+    /* from https://fonts.gstatic.com/s/encodesanssemiexpanded/v2/ke83OhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TO401Kg.eot */
+      url('/w/static/fonts/Encode_Sans_Semi_Expanded.eot?#iefix') format('embedded-opentype'),
+    /* from https://fonts.gstatic.com/l/font?kit=ke83OhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TO401KQ&skey=4f229740d3e0a176&v=v2#EncodeSansSemiExpanded */
+      url('/w/static/fonts/Encode_Sans_Semi_Expanded.svg#EncodeSansSemiExpanded') format('svg'),
+    /* from https://fonts.gstatic.com/s/encodesanssemiexpanded/v2/ke83OhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TO401Kw.ttf */
+      url('/w/static/fonts/Encode_Sans_Semi_Expanded.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Encode Sans Semi Expanded Thin'),
+    local('EncodeSansSemiExpanded-Thin'),
+    url('/w/static/fonts/EncodeSansSemiExpanded-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Encode Sans Semi Expanded Medium'),
+    local('EncodeSansSemiExpanded-Medium'),
+    url('/w/static/fonts/EncodeSansSemiExpanded-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Encode Sans Semi Expanded SmBd'),
+    local('EncodeSansSemiExpanded-SemiBold'),
+    url('/w/static/fonts/EncodeSansSemiExpanded-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Encode Sans Semi Expanded ExBd'),
+    local('EncodeSansSemiExpanded-ExtraBold'),
+    url('/w/static/fonts/EncodeSansSemiExpanded-ExtraBold.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Encode Sans'),
+    local('EncodeSans-Regular'),
+      url('/w/static/fonts/EncodeSans-Regular.ttf') format('truetype');
+}
+
+/* Tone & PDS fonts */
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: local('Barlow Regular'), local('Barlow-Regular'),
+    /* from https://github.com/jpt/barlow/blob/main/fonts/woff2/Barlow-Regular.woff2 */
+      url('/w/static/fonts/Barlow-Regular.woff2') format('woff2'),
+    /* from https://github.com/jpt/barlow/blob/main/fonts/woff/Barlow-Regular.woff */
+      url('/w/static/fonts/Barlow-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  src: local('Barlow Semi Bold'), local('Barlow-Medium'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/Barlow-Medium.woff2 */
+      url('/w/static/fonts/Barlow-Medium.woff2') format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/Barlow-Medium.woff */
+      url('/w/static/fonts/Barlow-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: local('Barlow Semi Bold'), local('Barlow-SemiBold'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/Barlow-SemiBold.woff2 */
+      url('/w/static/fonts/Barlow-SemiBold.woff2') format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/Barlow-SemiBold.woff */
+      url('/w/static/fonts/Barlow-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: condensed;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/BarlowCondensed-Regular.woff2 */
+      url('/w/static/fonts/BarlowCondensed-Regular.woff2')
+      format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/BarlowCondensed-Regular.woff */
+      url('/w/static/fonts/BarlowCondensed-Regular.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: condensed;
+  src: local('Barlow Condensed Medium'), local('BarlowCondensed-Medium'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/BarlowCondensed-Medium.woff2 */
+      url('/w/static/fonts/BarlowCondensed-Medium.woff2')
+      format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/BarlowCondensed-Medium.woff */
+      url('/w/static/fonts/BarlowCondensed-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: condensed;
+  src: local('Barlow Condensed'), local('Barlow-Condensed'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/BarlowCondensed-Light.woff2 */
+      url('/w/static/fonts/BarlowCondensed-Light.woff2')
+      format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/BarlowCondensed-Light.woff */
+      url('/w/static/fonts/BarlowCondensed-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'),
+    /* from https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2 */
+      url('/w/static/fonts/Source_Code_Pro.woff2') format('woff2'),
+    /* from https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevQ.woff */
+      url('/w/static/fonts/Source_Code_Pro.woff') format('woff'),
+    /* from https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevS.eot */
+      url('/w/static/fonts/Source_Code_Pro.eot?#iefix') format('embedded-opentype'),
+    /* from https://fonts.gstatic.com/l/font?kit=HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevR&skey=d94d317bc78fd84e&v=v7#SourceCodePro */
+      url('/w/static/fonts/Source_Code_Pro.svg#SourceCodePro') format('svg'),
+    /* from https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf */
+      url('/w/static/fonts/Source_Code_Pro.ttf') format('truetype');
+
+/* For PDS */
+
+@font-face {
+  font-family: 'barlow_medium';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  src: local('Barlow Semi Bold'), local('Barlow-Medium'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/Barlow-Medium.woff2 */
+      url('/w/static/fonts/Barlow-Medium.woff2') format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/Barlow-Medium.woff */
+      url('/w/static/fonts/Barlow-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'barlow_semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: local('Barlow Semi Bold'), local('Barlow-SemiBold'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/Barlow-SemiBold.woff2 */
+      url('/w/static/fonts/Barlow-SemiBold.woff2') format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/Barlow-SemiBold.woff */
+      url('/w/static/fonts/Barlow-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'barlow_condensed_regular';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: condensed;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff2/BarlowCondensed-Regular.woff2 */
+      url('/w/static/fonts/BarlowCondensed-Regular.woff2')
+      format('woff2'),
+    /* from  https://github.com/jpt/barlow/blob/main/fonts/woff/BarlowCondensed-Regular.woff */
+      url('/w/static/fonts/BarlowCondensed-Regular.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'barlow_semi_condensed_regular';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: semi-condensed;
+  src: local('Barlow Semi Condensed Regular'),
+    local('BarlowSemiCondensed-Regular'),
+    url('/w/static/fonts/BarlowSemiCondensed-Regular.ttf')
+      format('truetype'),
+    url('/w/static/fonts/BarlowSemiCondensed-Regular.otf')
+      format('opentype');
+}
+
+@font-face {
+  font-family: 'barlow_semi_condensed_medium';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: semi-condensed;
+  src: local('Barlow Semi Condensed Medium'),
+    local('BarlowSemiCondensed-Medium'),
+    url('/w/static/fonts/BarlowSemiCondensed-Medium.ttf')
+      format('truetype'),
+    url('/w/static/fonts/BarlowSemiCondensed-Medium.otf')
+      format('opentype');
+}
+
+@font-face {
+  font-family: 'barlow_semi_condensed_light';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: semi-condensed;
+  src: local('Barlow Semi Condensed light'), local('BarlowSemiCondensed-Light'),
+    url('/w/static/fonts/BarlowSemiCondensed-Light.ttf')
+      format('truetype'),
+    url('/w/static/fonts/BarlowSemiCondensed-Light.otf')
+      format('opentype');
+}
+
+@font-face {
+  font-family: 'barlow_semi_condensed_semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  src: local('Barlow Semi Condensed'), local('BarlowSemiCondensed-SemiBold'),
+    url('/w/static/fonts/BarlowSemiCondensed-SemiBold.ttf')
+      format('truetype'),
+    url('/w/static/fonts/BarlowSemiCondensed-SemiBold.otf')
+      format('opentype');
+}

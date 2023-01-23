@@ -1,0 +1,13 @@
+# Generated files
+tooling/nginx.conf
+tooling/docker-compose.yaml
+
+__coverage
+
+# Libraries
+node_modules
+
+# Hidden files
+.DS_Store
+.idea
+.vscode

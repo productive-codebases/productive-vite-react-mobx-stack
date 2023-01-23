@@ -1,0 +1,24 @@
+.gitattributes text eol=lf
+
+*.json         text eol=lf
+
+*.sh           text eol=lf
+*.md           text eol=lf
+*.yaml         text eol=lf
+
+*.sql          text eol=crlf
+*.psm1         text eol=crlf
+*.ps1         text eol=crlf
+
+
+# JS settings
+*.html         text eol=lf
+*.css          text eol=lf
+*.less         text eol=lf
+*.js           text eol=lf
+*.ts           text eol=lf
+*.tsx          text eol=lf
+*.svg          text eol=lf
+
+# Code settings
+*.kt         text eol=lf

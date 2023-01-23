@@ -1,0 +1,24 @@
+{
+  "name": "tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check:code": "tsc --noEmit",
+    "lint:code": "eslint . --ext .ts,.tsx --quiet",
+    "format:code": "prettier --write src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.10",
+    "@types/prettier": "^2.7.1",
+    "esbuild": "^0.15.18",
+    "esbuild-register": "^3.4.1",
+    "prettier": "^2.8.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.3"
+  }
+}

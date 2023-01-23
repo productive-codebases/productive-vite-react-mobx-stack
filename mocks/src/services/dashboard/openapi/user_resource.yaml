@@ -1,0 +1,43 @@
+openapi: 3.0.3
+info:
+  title: UserResource
+  description: Get users
+  version: "1.0"
+paths:
+  /users:
+    get:
+      description: Get the list of users
+      responses:
+        '200':
+          description: list of user objects
+          content:
+            'application/json':
+              schema:
+                $ref: './model/GetUsersResponse.json'
+  /roles:
+    get:
+      description: Get the list of roles
+      responses:
+        '200':
+          description: list of role objects
+          content:
+            'application/json':
+              schema:
+                $ref: './model/GetRolesResponse.json'
+  /users/{userId}/roles:
+    get:
+      description: Get the roles of a user
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          description: Id of the user
+          schema:
+            type: string
+      responses:
+        '200':
+          description: list of role objects
+          content:
+            'application/json':
+              schema:
+                $ref: './model/GetUserRolesResponse.json'

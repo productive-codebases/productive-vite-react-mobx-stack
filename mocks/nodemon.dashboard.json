@@ -1,0 +1,7 @@
+{
+  "watch": ["src/services/dashboard"],
+  "ignore": ["src/**/*.test.ts", "node_modules"],
+  "ext": "ts,json",
+  "exec": "node -r esbuild-register --inspect=0.0.0.0:9233 src/services/dashboard/server.ts |bunyan",
+  "legacyWatch": true
+}

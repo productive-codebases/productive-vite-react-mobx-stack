@@ -1,0 +1,8 @@
+# .github/CODEOWNERS
+# This file designates required PR reviewers for this repository
+# https://help.github.com/articles/about-codeowners/
+# IMPORTANT NOTE: When teams or individuals are added to this list, they must also be added to the `Collaborators`
+# section of the Github repo's settings
+
+@amineaud
+@areverte

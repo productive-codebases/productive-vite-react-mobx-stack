@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "role_id",
+    "name"
+  ],
+  "properties": {
+    "role_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "enum": [
+        "administrator",
+        "reader",
+        "writer"
+      ]
+    }
+  }
+}

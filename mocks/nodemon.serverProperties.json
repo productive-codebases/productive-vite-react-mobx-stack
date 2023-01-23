@@ -1,0 +1,7 @@
+{
+  "watch": ["src/services/serverProperties"],
+  "ignore": ["src/**/*.test.ts", "node_modules"],
+  "ext": "ts,json",
+  "exec": "node -r esbuild-register --inspect=0.0.0.0:9232 src/services/serverProperties/server.ts |bunyan",
+  "legacyWatch": true
+}

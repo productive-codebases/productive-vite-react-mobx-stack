@@ -1,0 +1,17 @@
+# Ignore everything...
+**
+
+# ... except the root package.json (for git hook?)
+!package.json
+!package-lock.json
+
+# ... except deployment configuration
+!service.yaml
+
+# ... except what's needed ...
+!/client/**
+!/common/**
+!/server/**
+
+# ...and ignore node modules if any in level below root
+**/node_modules

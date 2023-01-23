@@ -1,0 +1,20 @@
+server:
+  hostname: '0.0.0.0'
+  # Use 5001 instead of 5000 because 5000 is generally used by default on MacOS
+  port: 5001
+
+  tls:
+    enabled: false
+    paths:
+      key: 'misc/certificates/localhost.key'
+      cert: 'misc/certificates/localhost.crt'
+      ca: 'misc/certificates/myCA.pem'
+    disableValidation: false
+
+client:
+  environment:
+    origin: 'http://localhost'
+    production: true
+
+  log:
+    namespace: '*'

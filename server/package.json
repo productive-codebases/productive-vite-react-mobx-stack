@@ -1,0 +1,50 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare:dist": "shx cp -r .env configs templates dist/server",
+    "clean:dist": "shx rm -rf dist && shx mkdir -p dist/server",
+    "build:prod": "npm run clean:dist && npm run prepare:dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "lint:code": "eslint . --ext .ts,.tsx --quiet",
+    "check:code": "tsc --noEmit",
+    "format:code": "prettier --write src",
+    "start:dev": "cross-env NODE_ENV=development DEBUG=server:* nodemon --config nodemon.json",
+    "start:prod": "cross-env DEBUG=server:* node dist/server/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/express": "^4.17.14",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^29.2.4",
+    "@types/js-yaml": "^4.0.5",
+    "@types/lodash": "^4.14.191",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.11.10",
+    "esbuild": "^0.15.18",
+    "esbuild-register": "^3.4.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@productive-codebases/toolbox": "^1.0.1",
+    "ajv": "^8.11.2",
+    "bunyan": "^1.8.15",
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "puppeteer": "^19.3.0",
+    "shx": "^0.3.4"
+  }
+}
