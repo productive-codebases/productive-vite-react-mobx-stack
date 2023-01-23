@@ -1,21 +1,19 @@
 import { AppRouteName } from '@/client/app/routes'
-import { useStores } from '@/client/hooks/useStores'
 import { useUrlBuilder } from '@/client/hooks/useUrlBuilder'
 import { observer } from 'mobx-react-lite'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import PageDashboard from '../pages/PageDashboard'
-import PageLogin from '../pages/PageLogin'
 import PageRoot from '../pages/PageRoot'
 
 export interface IAppAuthenticatedRoutesProps {}
 
 export function AppAuthenticatedRoutes(props: IAppAuthenticatedRoutesProps) {
   const { urlBuilder } = useUrlBuilder()
-  const { storeAuthentication } = useStores()
+  // const { storeAuthentication } = useStores()
 
-  if (!storeAuthentication.isAuthenticated) {
-    return <PageLogin />
-  }
+  // if (!storeAuthentication.isAuthenticated) {
+  //   return <PageLogin />
+  // }
 
   return (
     <>

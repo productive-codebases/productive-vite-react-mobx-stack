@@ -1,9 +1,16 @@
+import StoreDashboard from '../components/pages/PageDashboard/StoreDashboard'
 import StoreAuthentication from './StoreAuthentication'
 import StoreLayout from './StoreLayout'
 
 export interface IStores {
+  // Common stores
+
   storeAuthentication: StoreAuthentication
   storeLayout: StoreLayout
+
+  // Pages stores
+
+  storeDashboard: StoreDashboard
 }
 
 /**

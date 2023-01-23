@@ -1,7 +1,7 @@
 import { ContextStores } from '@/client/hooks/useStores'
 import StoreRoot from '@/client/stores/StoreRoot'
 import { themes } from '@/client/styles/themes'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { StyleSheetManager, ThemeProvider } from 'styled-components'
 import ErrorBoundary from '../common/ErrorBoundary'
 import AntdProvider from './antdProvider'
@@ -17,7 +17,7 @@ export default function Root(props: IRootProps) {
     <ContextStores.Provider value={{ storeRoot: props.storeRoot }}>
       <ThemeProvider theme={themes.light}>
         <AntdProvider>
-          <HashRouter>
+          <BrowserRouter>
             <ErrorBoundary
               errorComponent={
                 <div>An error has occurred during the loading of the app.</div>
@@ -32,7 +32,7 @@ export default function Root(props: IRootProps) {
                 <App />
               </StyleSheetManager>
             </ErrorBoundary>
-          </HashRouter>
+          </BrowserRouter>
         </AntdProvider>
       </ThemeProvider>
     </ContextStores.Provider>

@@ -4,7 +4,7 @@ import {
 } from '@/common/openapi/dashboard/userResource'
 
 export enum OpenApiClientsEndPoints {
-  dashboard = '/dashboard'
+  dashboard = '/api/dashboard'
 }
 
 export interface IOpenApiClients {
