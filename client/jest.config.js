@@ -36,7 +36,7 @@ module.exports = {
     "@testing-library/jest-dom/extend-expect"
   ],
   setupFiles: [
-    './src/libs/react-helpers/reactLibrarySetup.ts'
+    './src/libs/tests-helpers/reactLibrarySetup.ts'
   ],
   preset: 'ts-jest'
 }
