@@ -5,10 +5,8 @@
   "scripts": {
     "check:code": "tsc --noEmit",
     "lint:code": "eslint . --ext .ts,.tsx --quiet",
-    "generate:mocks": "cross-env DEBUG=mocks:generator:* node -r esbuild-register src/data",
-    "start:all": "cross-env DEBUG=* npm run generate:mocks && concurrently -r \"npm run start:*(!all)\"",
-    "start:session": "nodemon --config nodemon.session.json",
-    "start:serverProperties": "nodemon --config nodemon.serverProperties.json",
+    "generate:data": "cross-env DEBUG=mocks:generator:* node -r esbuild-register src/data",
+    "start:all": "cross-env DEBUG=* npm run generate:data && concurrently -r \"npm run start:*(!all)\"",
     "start:dashboard": "nodemon --config nodemon.dashboard.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

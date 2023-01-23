@@ -67,26 +67,26 @@ export const servicesConfiguration: ServicesConfiguration = {
   // Dmemo backend
   dashboard: {
     mocks: {
-      nginxLocation: '/dashboard',
+      nginxLocation: '/api/dashboard',
       nginxEndpoint: '',
-      viteLocation: '/dashboard',
+      viteLocation: '/api/dashboard',
       viteProxyOptions: {
         target: 'http://0.0.0.0:6010',
         changeOrigin: true,
-        rewrite: (path: string) => path.replace(/^\/dashboard/, '')
+        rewrite: (path: string) => path.replace(/^\/api\/dashboard/, '')
       },
       protocol: 'http',
       hostname: '0.0.0.0',
       port: 6010
     },
     local: {
-      nginxLocation: '/dashboard',
+      nginxLocation: '/api/dashboard',
       nginxEndpoint: '',
-      viteLocation: '/dashboard',
+      viteLocation: '/api/dashboard',
       viteProxyOptions: {
         target: 'http://0.0.0.0:6010',
         changeOrigin: true,
-        rewrite: (path: string) => path.replace(/^\/dashboard/, '')
+        rewrite: (path: string) => path.replace(/^\/api\/dashboard/, '')
       },
       protocol: 'http',
       hostname: '0.0.0.0',

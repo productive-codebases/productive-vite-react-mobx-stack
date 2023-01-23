@@ -1,4 +1,5 @@
 import { appRoutes } from '@/client/app/routes'
+import StoreDashboard from '@/client/components/pages/PageDashboard/StoreDashboard'
 import { Environment } from '@/client/libs/Environment'
 import { IFetchClient } from '@/client/libs/FetchClient/types'
 import { translate } from '@/client/libs/i18n/translate'
@@ -101,11 +102,11 @@ export default class StoreRoot<
       /* Common stores */
 
       storeAuthentication: new StoreAuthentication(this, {}),
-      storeLayout: new StoreLayout(this, {})
+      storeLayout: new StoreLayout(this, {}),
 
       /* Page stores */
 
-      // TODO
+      storeDashboard: new StoreDashboard(this, {})
     }
   }
 }
