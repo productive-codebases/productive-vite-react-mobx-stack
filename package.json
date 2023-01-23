@@ -30,6 +30,8 @@
     "lint:code": "concurrently -r \"npm run lint:code:*\"",
     "start:client:dev": "npm run start:dev --prefix client",
     "start:client:local": "npm run start:local --prefix client",
+    "start:mocks:generate:data": "npm run generate:data --prefix mocks",
+    "start:mocks:dev": "npm run start:mocks:generate:data && npm run start:all --prefix mocks",
     "start:dev": "concurrently -r \"npm run start:*:dev\"",
     "start:local": "concurrently \"npm run start:server:dev\" \"npm run start:client:local\"",
     "start:prod": "concurrently -r \"npm run start:*:prod\"",

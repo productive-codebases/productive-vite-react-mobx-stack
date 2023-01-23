@@ -48,7 +48,7 @@ export function createResponse<TResponse>(
           : json) || {}
 
       setTimeout(
-        () => res.status(200).send(finalJson),
+        () => res.status(200).json(finalJson),
         // simulate some network delay
         delay
       )
